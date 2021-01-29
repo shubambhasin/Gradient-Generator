@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <label for="color1">Color 1</label>
+        <input type="slider" value="#ff0000" id="color1">
+        <label for="color1">Color 1</label>
+        <input type="color" value="#00ff00" id="color2">
+        <label for="color1">Color 1</label>
+        <input type="color" value="#0000ff" id="color3">
+
+        <button onchange="generateGrad()" id="generate">Generate Gradient</button> -->
+
+      <div class="range-container">
+        <input
+          type="range"
+          min="0"
+          max="50"
+          id="input"
+          value="0"
+          class="corner"
+        />
+      </div>
+      <div class="btn-container">
+        <button class="toRight" onclick="toRyt()">To right</button>
+        <button class="toRightBottom" onclick="toRytBottom()">
+          To right bottom
+        </button>
+        <button class="toRightTop" onclick="toRytTop()">To right top</button>
+        <button class="toLeft" onclick="toLft()">To left</button>
+        <button class="toLeftBottom" onclick="toLftBottom()">
+          To left bottom
+        </button>
+        <button class="toLeftTop" onclick="toLftTop()">To left top</button>
+        <button class="toTop" onclick="toTp()">To top</button>
+        <button class="toBottom" onclick="toBtm()">To bottom</button>
+      </div>
+      <div class="color-container">
+        <input type="color" class="color1" />
+        <input type="color" class="color2" />
+        <input type="color" class="color3" />
+      </div>
+
+      <div class="square"></div>
+    </div>
+    <script src="./logic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+
+:root
+{
+
+    --radius: 0;
+    --bgColor: #ff0000;
+    --color1: #ff0000;
+    --color2: #00ff00;
+    --color3: #0000ff;
+    --direction: "linear-gradient"
+
+}
+body
+{
+    background-image:linear-gradient(to right top,var(--color1),var(--color2),var(--color3));
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.btn-container
+{
+    display: flex;
+}
+.square
+{
+    width: 20vh;
+    height: 20vh;
+   background-color: #00ff00;
+    border-radius: var(--radius);
+}
+
+.input-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.input-container input
+{
+    width: 100%;
+}
+.bg-color
+{
+    width: 100%;
+}
